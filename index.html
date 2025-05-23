@@ -1,24 +1,27 @@
-<!DOCTYPE html>
-<html lang="id">
+<!DOCTYPE html><html lang="id">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Hung Hung - Portofolio</title>
   <style>
     body {
       margin: 0;
-      font-family: Arial, sans-serif;
+      font-family: 'Segoe UI', sans-serif;
       background-color: #111;
       color: #fff;
     }
     header {
-      background-color: #b30000;
-      padding: 20px;
+      background: linear-gradient(90deg, #ff0000, #880000);
+      padding: 60px 20px;
       text-align: center;
     }
     header h1 {
+      font-size: 3rem;
       margin: 0;
-      font-size: 2.5rem;
+    }
+    header p {
+      font-size: 1.2rem;
+      margin-top: 10px;
     }
     nav {
       background-color: #222;
@@ -27,56 +30,89 @@
     }
     nav a {
       color: white;
-      margin: 0 15px;
+      margin: 0 20px;
       text-decoration: none;
+      font-weight: bold;
+      transition: color 0.3s;
+    }
+    nav a:hover {
+      color: #ff4444;
     }
     section {
-      padding: 40px 20px;
-      max-width: 800px;
+      padding: 50px 20px;
+      max-width: 1000px;
       margin: auto;
+      animation: fadeIn 1s ease-in;
     }
-    .projects a {
-      display: inline-block;
-      margin-top: 10px;
+    @keyframes fadeIn {
+      from {opacity: 0; transform: translateY(20px);}
+      to {opacity: 1; transform: translateY(0);}
+    }
+    .project-card {
+      background-color: #222;
+      padding: 20px;
+      margin: 20px 0;
+      border-left: 5px solid #ff0000;
+    }
+    .project-card h3 {
+      margin-top: 0;
+    }
+    .project-card a {
       color: #ff4444;
+    }
+    .skills {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 15px;
+    }
+    .skill {
+      background-color: #333;
+      padding: 10px 20px;
+      border-radius: 30px;
     }
     footer {
       text-align: center;
       padding: 20px;
       background-color: #222;
+      font-size: 0.9rem;
     }
   </style>
 </head>
 <body>
   <header>
     <h1>Hung Hung</h1>
-    <p>Lulusan SMA | Suka voli & nge-gym | Tertarik coding dibantu AI</p>
-  </header>
-
-  <nav>
+    <p>Developer Otodidak yang Gak Takut Tantangan</p>
+  </header>  <nav>
     <a href="#tentang">Tentang</a>
+    <a href="#skill">Skill</a>
     <a href="#project">Project</a>
     <a href="#kontak">Kontak</a>
-  </nav>
-
-  <section id="tentang">
+  </nav>  <section id="tentang">
     <h2>Tentang Gue</h2>
-    <p>Halo! Gue Hung Hung, lahir tahun 2003. Gue bukan lulusan IT, tapi belakangan ini gue lagi tertarik banget belajar coding dengan bantuan AI. Di sela-sela hobi main voli dan nge-gym, gue semangat banget ngebangun skill baru di dunia teknologi!</p>
-  </section>
-
-  <section id="project" class="projects">
+    <p>Gue Hung Hung, lahir 2003, lulusan SMA. Gue suka voli, nge-gym, dan sekarang lagi semangat belajar coding dibantu AI. Meskipun bukan dari background IT, gue yakin kerja keras dan rasa ingin tahu bisa bikin gue berkembang jadi developer yang keren.</p>
+  </section>  <section id="skill">
+    <h2>Skill</h2>
+    <div class="skills">
+      <div class="skill">HTML</div>
+      <div class="skill">CSS</div>
+      <div class="skill">JavaScript</div>
+      <div class="skill">CodePen</div>
+      <div class="skill">GitHub</div>
+      <div class="skill">AI-assisted Coding</div>
+    </div>
+  </section>  <section id="project">
     <h2>Project Kebanggaan</h2>
-    <p>Project pertama gue di dunia coding. Simple, tapi bikin bangga banget karena akhirnya berhasil juga:</p>
-    <a href="https://codepen.io/Hung-hung7903/full/bNNPBrM" target="_blank">Lihat Project di CodePen</a>
-  </section>
-
-  <section id="kontak">
-    <h2>Kontak Gue</h2>
+    <div class="project-card">
+      <h3>Project Pertama Gue</h3>
+      <p>Project ini sederhana, tapi spesial banget karena jadi awal perjalanan coding gue. Dibuat dengan semangat 100%!</p>
+      <a href="https://codepen.io/Hung-hung7903/full/bNNPBrM" target="_blank">Lihat Project</a>
+    </div>
+  </section>  <section id="kontak">
+    <h2>Kontak</h2>
     <p>Email: <a href="mailto:hung2tjhai@gmail.com">hung2tjhai@gmail.com</a></p>
-  </section>
-
-  <footer>
-    &copy; 2025 Hung Hung. Dibuat dengan semangat!
+    <p>LinkedIn/GitHub bisa ditambah nanti ya!</p>
+  </section>  <footer>
+    &copy; 2025 Hung Hung. Dibuat dengan semangat, kode, dan AI!
   </footer>
 </body>
 </html>
